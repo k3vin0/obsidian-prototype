@@ -1,0 +1,7 @@
+.container{
+    max-width: 2000rem;
+}
+.navbar-brand:hover{
+    background-color:aquamarine;
+    border-radius: 5px;
+}

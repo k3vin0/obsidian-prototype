@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form';
@@ -7,9 +8,11 @@ import './login.css'
 const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const navigate = useNavigate();
 
     const login = () => {
-        console.log(email, password);
+        console.log(email, password)
+        navigate('/home')
     }
 
     const handleEmail = (event) => {
